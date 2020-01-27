@@ -1,6 +1,6 @@
-const parallax = document.getElementById('parallax');
+const section1 = document.querySelector('.section-1');
 
 window.addEventListener('scroll', () => {
-    let offset = window.pageYOffset; // See how much user have scrolled from the top
-    parallax.style.backgroundPositionY = offset * 0.75 + 'px';
+	let offset = window.pageYOffset;
+	section1.style.backgroundPositionY = offset * 0.75 + 'px';
 });
